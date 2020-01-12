@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+<definition name="standardLayout" template="" >
+	<put-attribute name="baseHeader" value="/WEB-INF/layouts/baselayout/baseHeader.jsp" />
+	<put-attribute name="baseFooter" value="/WEB-INF/layouts/baselayout/baseFooter.jsp" />
+</definition>
+	
+<definition name="preloginlayout" template="/WEB-INF/layouts/preloginlayout/standard.jsp" extends="standardLayout">
+	<put-attribute name="header" value="/WEB-INF/layouts/preloginlayout/preLoginHeader.jsp"/>
+	<put-attribute name="menu" value=""/>
+	<put-attribute name="footer" value="/WEB-INF/layouts/preloginlayout/preLoginFooter.jsp"/>
+</definition>
+
+<!-- <definition name="postloginlayout" template="/WEB-INF/layouts/postloginlayout/standard.jsp" extends="standardLayout" >
+	<put-attribute name="header" value="/WEB-INF/layouts/postloginlayout/postloginheader.jsp"/>
+	<put-attribute name="menu" value=""/>
+	<put-attribute name="footer" value="/WEB-INF/layouts/postloginlayout/postloginfooter.jsp"/>
+</definition>
+
+<definition name="dashboardPostloginlayout" template="/WEB-INF/layouts/postloginlayout/standard.jsp" extends="standardLayout" >
+	<put-attribute name="header" value="/WEB-INF/layouts/postloginlayout/dashboardPostloginHeader.jsp"/>
+	<put-attribute name="menu" value=""/>
+	<put-attribute name="footer" value="/WEB-INF/layouts/postloginlayout/postloginfooter.jsp"/>
+</definition>
+
+E-sign Registration Layout
+<definition name="es-reg-layout" template="/WEB-INF/layouts/preloginlayout/standard.jsp" extends="standardLayout">
+	<put-attribute name="header" value="/WEB-INF/layouts/es-reg-layout/es-reg-header.jsp"/>
+	<put-attribute name="menu" value=""/>
+	<put-attribute name="footer" value="/WEB-INF/layouts/preloginlayout/preLoginFooter.jsp"/>
+</definition> -->
+		
+</tiles-definitions>
